@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoList from './components/TodoList';
 import AddTodoItem from './components/AddTodoItem';
+import JokeCard from './components/JokeCard';
 
 // The variable initialized of type Todo and made an array.
 const initialTodos: Todo[] = [
@@ -45,6 +46,7 @@ function App() {
     <>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <AddTodoItem addTodo={addTodo} />
+      <JokeCard />
     </>
   );
 }
